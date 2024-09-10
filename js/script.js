@@ -44,7 +44,7 @@ function showSection(hash) {
         var node = nodes.item(i);
         if (node.id == hash) {
             node.style.display = "block";
-            console.log("tous les nodes : ", node," et leurs index", i);
+            // console.log("tous les nodes : ", node," et leurs index", i);
         } else {
             node.style.display = "none";
         }
@@ -53,11 +53,17 @@ function showSection(hash) {
 
 
 window.onload = () => {
-
+    console.log("window is loading")
     // do we support hashchange events?
     // if so, hide all but the active section
     if ("onhashchange" in window) {
         updateHash();
         window.addEventListener('hashchange', updateHash);
     }
+
+    //remove loader and show vis
+    $('.loader').hide();
+    $('.main-content').css('opacity', 1);
+    $('.progression').css('opacity', 1);
+    $('.footer').css('opacity', 1);
 };
