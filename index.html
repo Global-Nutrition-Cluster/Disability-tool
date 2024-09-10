@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.11/c3.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/39e5643f1a.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href='css/styles.css' rel='stylesheet' />
+    <title>GNC Disability Tool</title>
+</head>
+<body>
+    <div class="container">
+        <div class="progression">
+            <span id="bar"></span>
+            <p>Connecting Inclusive Feeding and Disability Resources to Nutrition Practices in Humanitarian Settings</p>
+        </div>
+        <div class="main-content">
+            <section class="question" id="_start">
+                <p class="main-question">Select the age range of the child.</p>
+                <p class="question-note"></p>
+    
+                <ul class="collection-item">
+                    <li><a href="#0_5_status"><div class="item"><h4>0-5 completed months</h4></div></a></li>
+                    <li><a href="#6_11_status"><div class="item"><h4>6-11 completed months</h4></div></a></li>
+                    <li><a href="#12_23_status"><div class="item"><h4>12-23 completed months</h4></div></a></li>
+                    <li><a href="#24_59_status"><div class="item"><h4>24-59 months (and older)</h4></div></a></li>
+                </ul>
+            </section>
+
+            <!-- 0-5 :  -->
+            <section class="question" id="0_5_status">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ASSESS Health and Nutrition Status</p>
+                </div>
+                <p class="notice">Follow local protocols or use another tool (example: Management of Small & Nutritionally At-risk Infants (MAMI)) to complete your assessment of infant’s health and nutrition. </p>
+                <p class="main-question">What is the status of the infant?</p>
+                <ul>
+                    <li><a href="#0_5_stop_ref_wasting"><div class="item"><h4>Very Severe Disease/Wasting</h4></div></a></li>
+                    <li><a href="#0_5_assess_oral_structures"><div class="item"><h4>Uncomplicated, Severe Acute Malnutrition or Moderate Acute
+                        Malnutrition /Wasting</h4></div></a></li>
+                    <li><a href="#0_5_stop_ref_no_wasting"><div class="item"><h4>No acute malnutrition/wasting</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#_start">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+
+            <!-- 0-5 : Potential Risk -->
+            <section class="question" id="0_5_assess_oral_structures">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>Assess oral structures</p>
+                </div>
+                <p class="notice">Check out the image below!</p>
+                <ul>
+                    <li><a href="#0_5_assess_nocleft"><div class="item"><h4>No Cleft</h4></div></a></li>
+                    <li><a href="#0_5_assess_liquid_nose"><div class="item"><h4>Cleft</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/image.png" alt="">
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : No Cleft -->
+            <section class="question" id="0_5_assess_nocleft">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ANALYZE Functonal Feeding Concerns and ACT</p>
+                </div>
+                <p class="notice"></p>
+                <p class="main-question">What feeding concerns do you have?</p>
+                <ul>
+                    <li><a href="#0_5_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
+                    <li><a href="#0_5_assess_noweight"><div class="item"><h4>Not gaining weight</h4></div></a></li>
+                    <li><a href="#0_5_assess_liquid_nose"><div class="item"><h4>Liquid comes out of the nose</h4></div></a></li>
+                    <li><a href="#0_5_assess_coughing"><div class="item"><h4>Coughing or Choking</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_assess_oral_structures">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : No Cleft : No concerns-->
+            <section class="question" id="0_5_assess_noconcerns">
+                <p class="notice"></p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><div class="item"><h4>Continue to monitor growth and health</h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : No Cleft : Not gaining weight-->
+            <section class="question" id="0_5_assess_noweight">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#0_5_appraise"><div class="item"><h4>Appraise response to feeding strategies</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/no_weight_1.png" alt="">
+                    <img src="assets/no_weight_2.png" alt="">
+                    <img src="assets/no_weight_4.png" alt="">
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : No Cleft : Liquid comes out of the nose-->
+            <section class="question" id="0_5_assess_liquid_nose">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#0_5_appraise"><div class="item"><h4>Appraise response to feeding strategies</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/liquid_nose_1.png" alt="">
+                    <img src="assets/liquid_nose_2.png" alt="">
+                    <img src="assets/liquid_nose_3.png" alt="">
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : No Cleft : Coughing or Choking-->
+            <section class="question" id="0_5_assess_coughing">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#0_5_appraise"><div class="item"><h4>Appraise response to feeding strategies 0 to 5 completed months</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/coughing_choking.png" alt="">
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : Appraise response to feeding strategies -->
+            <section class="question" id="0_5_appraise">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>APPRAISE Response to Feeding Strategies</p>
+                </div>
+                <p class="notice">During growth and nutrition monitoring or counselling sessions, ask
+                    caregiver about feeding. 
+                    </p>
+                <p class="main-question">Did feeding improve?</p>
+                <ul>
+                    <li><a href="#0_5_appraise_feeding_ok"><div class="item"><h4>YES, feeding improved.</h4></div></a></li>
+                    <li><a href="#0_5_appraise_SAM"><div class="item"><h4>NO, infant has complicated, severe acute malnutrition.</h4></div></a></li>
+                    <li><a href="#0_5_appraise_SAM_still"><div class="item"><h4>No, infant still has uncomplicated, severe acute malnutrition or moderate
+                        acute malnutrition.</h4></div></a></li>
+                    <li><a href="#0_5_appraise_unknown"><div class="item"><h4>It’s too soon to tell</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : Appraise response to feeding strategies : YES, feeding improved. -->
+            <section class="question" id="0_5_appraise_feeding_ok">
+                <p class="notice">Continue to follow feeding action plan and local/ICMI recommendations for
+                    ongoing health, growth, and nutrition monitoring.</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#0_5_next_steps"><div class="item"><h4>Go to ASSIGN Next Steps 0 to 5 Completed Months</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : Appraise response to feeding strategies : NO, infant has complicated, severe acute malnutrition. -->
+            <section class="question" id="0_5_appraise_SAM">
+                <p class="notice">Follow ICMI Guidance or national nutrition protocol to determine if
+                    supplemental feeding or referral to hospital is needed.</p>
+                <p class="main-question"></p>
+                <ul>
+                    <!-- <li><div class="item"><h4></h4></div></li> -->
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : Appraise response to feeding strategies : No, infant still has uncomplicated, severe acute malnutrition or moderate acute malnutrition. -->
+            <section class="question" id="0_5_appraise_SAM_still">
+                <p class="notice">Follow ICMI Guidance or national nutrition protocol to provide supplemental
+                    nutrition and continue to follow guidance in ACT: Feeding Action Plan to
+                    Address “Not Gaining Weight” 0 to 5 completed months. Refer to signs of
+                    swallowing difficulties in ACT: Feeding Action Plan to Address “Coughing or
+                    Choking” 0 to 5 completed months. </p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#0_5_assess_noweight"><div class="item"><h4>ACT: Feeding Action Plan to Address “Not Gaining Weight” 0 to 5 completed months</h4></div></a></li>
+                    <li><a href="#0_5_assess_coughing"><div class="item"><h4>ACT: Feeding Action Plan to Address “Coughing or Choking” 0 to 5 completed months</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : Appraise response to feeding strategies : It’s too soon to tell -->
+            <section class="question" id="0_5_appraise_unknown">
+                <p class="notice">Continue to follow Feeding Action Plan and APPRAISE Response to Feeding
+                    Strategies at next nutrition monitoring session. </p>
+                <p class="main-question"></p>
+                <ul>
+                    <!-- <li><div class="item"><h4>Go to ASSIGN Next Steps 0 to 5 Completed Months</h4></div></li> -->
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 0-5 : Potential Risk : Appraise response to feeding strategies : YES, feeding improved : Go to ASSIGN Next Steps 0 to 5 Completed Months -->
+            <section class="question" id="0_5_next_steps">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ASSIGN Next Steps 0 to 5 Completed Months</p>
+                </div>
+                <p class="notice">Access to existing community programs and assistive technology is a priority for
+                    malnourished children with feeding difficulties, and those with disabilities.</p>
+                <p class="main-question"></p>
+                <!-- <ul>
+                    <li><a href="#0_5_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
+                    <li><a href="#0_5_assess_noweight"><div class="item"><h4>Not gaining weight</h4></div></a></li>
+                    <li><a href="#0_5_assess_liquid_nose"><div class="item"><h4>Liquid comes out of the nose</h4></div></a></li>
+                    <li><a href="#0_5_assess_coughing"><div class="item"><h4>Coughing or Choking</h4></div></a></li>
+                </ul> -->
+                <div class="nav">
+                    <a href="#0_5_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/0_5_next_steps.png" alt="">
+                </div>
+            </section>
+
+            <!-- 6-11 completed months -->
+            <section class="question" id="6_11_status">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ASSESS Health and Nutrition Status</p>
+                </div>
+                <p class="notice">Always refer to local protocols or other existing tools such as the Integrated
+                    Management of Childhood Illness (ICMI) to complete your assessment of
+                    infant’s health and nutrition. WHO Guidance on Wasting</p>
+                <p class="main-question">What is the status of the infant?</p>
+                <ul>
+                    <li><a href="#6_11_stop_ref_wasting"><div class="item"><h4>Complicated, Severe Acute Malnutrition/Wasting</h4></div></a></li>
+                    <li><a href="#6_11_assess_oral_structures"><div class="item"><h4>Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition</h4></div></a></li>
+                    <li><a href="#6_11_stop_ref_no_wasting"><div class="item"><h4>No Acute Malnutrition/Wasting</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#_start">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+
+            <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition-->
+            <section class="questiontop" id="6_11_assess_oral_structures">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>Assess oral structures</p>
+                </div>
+                <p class="notice">Check out the image below!</p>
+                <ul>
+                    <li><a href="#6_11_assess_nocleft"><div class="item"><h4>No Cleft</h4></div></a></li>
+                    <li><a href="#6_11_assess_liquid_nose"><div class="item"><h4>Cleft</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/6_11_asses_1.png" alt="">
+                    <img src="assets/6_11_asses_2.png" alt="">
+                </div>
+            </section>
+            <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+              No Cleft-->
+            <section class="question" id="6_11_assess_nocleft">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ANALYZE Functonal Feeding Concerns and ACT 6 to 11 Completed
+                        Months</p>
+                </div>
+                <p class="notice"></p>
+                <p class="main-question">What feeding concerns do you have?</p>
+                <ul>
+                    <li><a href="#6_11_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
+                    <li><a href="#6_11_assess_noweight"><div class="item"><h4>Not gaining weight</h4></div></a></li>
+                    <li><a href="#6_11_assess_liquid_nose"><div class="item"><h4>Liquid comes out of the nose</h4></div></a></li>
+                    <li><a href="#6_11_assess_coughing"><div class="item"><h4>Coughing or Choking</h4></div></a></li>
+                    <li><a href="#6_11_assess_only_drinks"><div class="item"><h4>Only drinks</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_assess_oral_structures">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+              No Cleft: No concerns-->
+            <section class="question" id="6_11_assess_noconcerns">
+                <p class="notice"></p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><div class="item"><h4>Stop here, follow local nutrition protocols. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>   
+            <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+              No Cleft: Not gaining weight-->
+            <section class="question" id="6_11_assess_noweight">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#6_11_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 6 to 11 completed
+                        months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/6_11_no_weight_1.png" alt="">
+                    <img src="assets/6_11_no_weight_2.png" alt="">
+                    <img src="assets/6_11_no_weight_3.png" alt="">
+                    <img src="assets/6_11_no_weight_4.png" alt="">
+                </div>
+            </section>      
+            <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+              No Cleft: Liquid comes out of the nose-->    
+            <section class="question" id="6_11_assess_liquid_nose">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#6_11_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 6 to 11 completed
+                        months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/6_11_liquid_nose_1.png" alt="">
+                    <img src="assets/6_11_liquid_nose_2.png" alt="">
+                    <img src="assets/6_11_liquid_nose_3.png" alt="">
+                </div>
+            </section> 
+            <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+              No Cleft: Coughing or Choking--> 
+            <section class="question" id="6_11_assess_coughing">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#6_11_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 6 to 11 completed
+                        months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/6_11_coughing_choking_1.png" alt="">
+                    <img src="assets/6_11_coughing_choking_2.png" alt="">
+                    <img src="assets/6_11_coughing_choking_3.png" alt="">
+                </div>
+            </section> 
+            <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+              No Cleft: Only drinks --> 
+            <section class="question" id="6_11_assess_only_drinks">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#6_11_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 6 to 11 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/6_11_drinks_1.png" alt="">
+                    <img src="assets/6_11_drinks_2.png" alt="">
+                </div>
+            </section> 
+            <!-- 6-11 completed months :  APPRAISE Response to Feeding Strategies 6 to 11 completed months. -->
+            <section class="question" id="6_11_appraise">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>APPRAISE Response to Feeding Strategies</p>
+                </div>
+                <p class="notice">During growth and nutrition monitoring or counselling sessions, ask
+                    caregiver about feeding. 
+                    </p>
+                <p class="main-question">Did feeding improve?</p>
+                <ul>
+                    <li><a href="#6_11_appraise_feeding_ok"><div class="item"><h4>YES, feeding is improving.</h4></div></a></li>
+                    <li><a href="#6_11_appraise_SAM"><div class="item"><h4>NO, young child has complicated, severe acute malnutrition</h4></div></a></li>
+                    <li><a href="#6_11_appraise_SAM_still"><div class="item"><h4>No, young child has uncomplicated, severe acute malnutrition or moderate acute malnutrition.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 6-11 completed months :  APPRAISE Response to Feeding Strategies 6 to 11 completed months:
+             YES, feeding is improving. -->
+            <section class="question" id="6_11_appraise_feeding_ok">
+                <p class="notice">Continue to follow feeding action plan and local/ICMI recommendations for
+                    ongoing health, growth, and nutrition monitoring.</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#6_11_next_steps"><div class="item"><h4>Go to ASSIGN Next Steps 6 to 11 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 6-11 completed months :  APPRAISE Response to Feeding Strategies 6 to 11 completed months:
+             NO, young child has complicated, severe acute malnutrition -->
+             <section class="question" id="6_11_appraise_SAM">
+                <p class="notice">Follow ICMI Guidance or national nutrition protocol to determine if
+                    supplemental feeding or referral to hospital is needed.</p>
+                <p class="main-question"></p>
+                <ul>
+                    <!-- <li><div class="item"><h4></h4></div></li> -->
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 6-11 completed months :  APPRAISE Response to Feeding Strategies 6 to 11 completed months:
+             No, young child has uncomplicated, severe acute malnutrition or moderate acute malnutrition. -->
+             <section class="question" id="6_11_appraise_SAM_still">
+                <p class="notice">Follow ICMI Guidance or national nutrition protocol to provide supplemental
+                    nutrition and continue to follow guidance in ACT: Feeding Action Plan to
+                    Address “Not Gaining Weight” 6 to 11 completed months. </p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#6_11_assess_noweight"><div class="item"><h4>ACT: Feeding Action Plan to Address “Not Gaining Weight” 6 to 11 completed months.</h4></div></a></li>
+                    <li><a href="#6_11_assess_coughing"><div class="item"><h4>ACT: Feeding Action Plan to Address “Coughing or Choking” 6 to 11 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 6-11 completed months :  No Acute Malnutrition/Wasting-->
+
+            <!-- 6-11 completed months :  Go to ASSIGN Next Steps 6 to 11 completed months. -->
+            <section class="question" id="6_11_next_steps">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ASSIGN Next Steps 6 to 11 Completed Months</p>
+                </div>
+                <p class="notice">Access to existing community programs and assistive technology is a priority for
+                    malnourished children with feeding difficulties, and those with disabilities.</p>
+                <p class="main-question"></p>
+                <!-- <ul>
+                    <li><a href="#0_5_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
+                </ul> -->
+                <div class="nav">
+                    <a href="#6_11_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/6_11_next_steps.png" alt="">
+                </div>
+            </section>
+            <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+              Cleft-->
+
+            <!-- 12-23 -->
+            <section class="question" id="12_23_status">
+                <p class="notice">Follow local protocols or use other tools such as the Integrated Management of Childhood Illness (ICMI) to complete your assessment of infant’s health and nutrition</p>
+                <p class="main-question">What is the status of the toddler?</p>
+                <ul>
+                    <li><a href="#12_23_stop_ref_no_wasting"><div class="item"><h4>Complicated, Severe Acute Malnutrition/Wasting</h4></div></a></li>
+                    <li><a href="#12_23_assess_oral_structures"><div class="item"><h4>Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition</h4></div></a></li>
+                    <li><a href="#12_23_stop_ref_wasting"><div class="item"><h4>No Acute Malnutrition/Wasting</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#_start">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition -->
+            <section class="question" id="12_23_assess_oral_structures">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>Assess oral structures</p>
+                </div>
+                <p class="notice">Check out the image below!</p>
+                <ul>
+                    <li><a href="#12_23_assess_nocleft"><div class="item"><h4>No Cleft</h4></div></a></li>
+                    <li><a href="#12_23_assess_liquid_nose"><div class="item"><h4>Cleft</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/12_23_asses_1.png" alt="">
+                    <img src="assets/12_23_asses_2.png" alt="">
+                    <img src="assets/12_23_asses_3.png" alt="">
+                </div>
+            </section>
+            <!-- 12-23 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+             No Cleft -->
+            <section class="question" id="12_23_assess_nocleft">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ANALYZE Functonal Feeding Concerns and ACT</p>
+                </div>
+                <p class="notice"></p>
+                <p class="main-question">What feeding concerns do you have?</p>
+                <ul>
+                    <li><a href="#12_23_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
+                    <li><a href="#12_23_assess_noweight"><div class="item"><h4>Not gaining weight</h4></div></a></li>
+                    <li><a href="#12_23_assess_liquid_nose"><div class="item"><h4>Liquid comes out of the nose</h4></div></a></li>
+                    <li><a href="#12_23_assess_coughing"><div class="item"><h4>Coughing or Choking</h4></div></a></li>
+                    <li><a href="#12_23_assess_only_drinks"><div class="item"><h4>Only drinks liquids</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_assess_oral_structures">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+             No Cleft : No Concerns-->
+            <section class="question" id="12_23_assess_noconcerns">
+                <p class="notice"></p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><div class="item"><h4>Stop here, follow local nutrition protocols. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section> 
+            <!-- 12-23 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+             No Cleft : Not gaining weight--> 
+            <section class="question" id="12_23_assess_noweight">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#12_23_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 12 to 23 Completed Months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/12_23_no_weight_1.png" alt="">
+                    <img src="assets/12_23_no_weight_2.png" alt="">
+                    <img src="assets/12_23_no_weight_3.png" alt="">
+                </div>
+            </section> 
+            <!-- 12-23 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+             No Cleft : Liquid comes out of the nose--> 
+            <section class="question" id="12_23_assess_liquid_nose">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#12_23_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 12 to 23 completed
+                        months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/12_23_liquid_nose_1.png" alt="">
+                    <img src="assets/12_23_liquid_nose_2.png" alt="">
+                    <img src="assets/12_23_liquid_nose_3.png" alt="">
+                </div>
+            </section>
+            <!-- 12-23 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+             No Cleft : Coughing or Choking--> 
+            <section class="question" id="12_23_assess_coughing">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#12_23_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 12 to 23 completed
+                        months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/12_23_coughing_choking_1.png" alt="">
+                    <img src="assets/12_23_coughing_choking_2.png" alt="">
+                </div>
+            </section> 
+            <!-- 12-23 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
+             No Cleft : Only drinks liquids--> 
+            <section class="question" id="12_23_assess_only_drinks">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#12_23_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 12 to 23 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/12_23_drinks_1.png" alt="">
+                    <img src="assets/12_23_drinks_2.png" alt="">
+                </div>
+            </section> 
+            <!-- 12-23 completed months :  APPRAISE Response to Feeding Strategies 12 to 23 completed months. -->
+            <section class="question" id="12_23_appraise">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>APPRAISE Response to Feeding Strategies</p>
+                </div>
+                <p class="notice">During growth and nutrition monitoring or counselling sessions, ask
+                    caregiver about feeding. 
+                    </p>
+                <p class="main-question">Did feeding improve?</p>
+                <ul>
+                    <li><a href="#12_23_appraise_feeding_ok"><div class="item"><h4>YES, feeding is improving.</h4></div></a></li>
+                    <li><a href="#12_23_appraise_SAM"><div class="item"><h4>NO, young child has complicated, severe acute malnutrition</h4></div></a></li>
+                    <li><a href="#12_23_appraise_SAM_still"><div class="item"><h4>No, young child has uncomplicated, severe acute malnutrition or moderate acute malnutrition.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 completed months :  APPRAISE Response to Feeding Strategies 12 to 23 completed months.:
+             YES, feeding is improving. -->
+             <section class="question" id="12_23_appraise_feeding_ok">
+                <p class="notice">Continue to follow feeding action plan and local/ICMI recommendations for
+                    ongoing health, growth, and nutrition monitoring.</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#12_23_next_steps"><div class="item"><h4>Go to ASSIGN Next Steps 12 to 23 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 completed months :  APPRAISE Response to Feeding Strategies 12 to 23 completed months.:
+             NO, young child has complicated, severe acute malnutrition. -->
+             <section class="question" id="12_23_appraise_SAM">
+                <p class="notice">Follow ICMI Guidance or national nutrition protocol to determine if
+                    supplemental feeding is needed, and refer to the nearest hospital. </p>
+                <p class="main-question"></p>
+                <ul>
+                    <!-- <li><div class="item"><h4></h4></div></li> -->
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 completed months :  APPRAISE Response to Feeding Strategies 12 to 23 completed months.:
+             No, young child has uncomplicated, severe acute malnutrition or moderate acute malnutrition. -->
+             <section class="question" id="12_23_appraise_SAM_still">
+                <p class="notice">Follow ICMI Guidance or national nutrition protocol to provide supplemental
+                    nutrition and continue to follow guidance in ACT: Feeding Action Plan to
+                    Address “Not Gaining Weight” 6 to 11 completed months. </p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#12_23_assess_noweight"><div class="item"><h4>ACT: Feeding Action Plan to
+                        Address “Not Gaining Weight” 12 to 23 completed months</h4></div></a></li>
+                    <li><a href="#12_23_assess_coughing"><div class="item"><h4>ACT: Feeding Action Plan to Address “Coughing or Choking” 12 to 23 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 completed months :  Go to ASSIGN Next Steps 12 to 23 completed months. -->
+            <section class="question" id="12_23_next_steps">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ASSIGN Next Steps 12 to 23 Completed Months</p>
+                </div>
+                <p class="notice">Access to existing community programs and assistive technology is a priority for
+                    malnourished children with feeding difficulties, and those with disabilities.</p>
+                <p class="main-question"></p>
+                <!-- <ul>
+                    <li><a href="#0_5_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
+                </ul> -->
+                <div class="nav">
+                    <a href="#12_23_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/12_23_next_steps.png" alt="">
+                </div>
+            </section>
+            <!-- 24-59 -->
+            <section class="question" id="24_59_status">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ASSESS Health and Nutrition Status</p>
+                </div>
+                <p class="notice">Always refer to local protocols or other existing tools such as the Integrated
+                    Management of Childhood Illness (ICMI) to complete your assessment of
+                    infant’s health and nutrition. WHO Guidance on Wasting</p>
+                <p class="main-question">What is the status of the young child?</p>
+                <ul>
+                    <li><a href="#24_59_stop_ref_wasting"><div class="item"><h4>Complicated, Severe Acute Malnutrition/Wasting</h4></div></a></li>
+                    <li><a href="#24_59_assess_oral_structures"><div class="item"><h4>Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition</h4></div></a></li>
+                    <li><a href="#24_59_stop_ref_no_wasting"><div class="item"><h4>No Acute Malnutrition/Wasting</h4></div></a></li>
+                    <li><a href="#24_59_alternatives_assess"><div class="item"><h4>Not able to assess growth using traditional measures</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#_start">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition -->
+            <section class="question" id="24_59_assess_oral_structures">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>Assess oral structures</p>
+                </div>
+                <p class="notice">Check out the image below!</p>
+                <ul>
+                    <li><a href="#24_59_assess_nocleft"><div class="item"><h4>No Cleft</h4></div></a></li>
+                    <li><a href="#24_59_assess_liquid_nose"><div class="item"><h4>Cleft</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/24_59_asses_1.png" alt="">
+                </div>
+            </section>
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition 
+             :No Cleft -->
+             <section class="question" id="24_59_assess_nocleft">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ANALYZE Functonal Feeding Concerns and ACT</p>
+                </div>
+                <p class="notice"></p>
+                <p class="main-question">What feeding concerns do you have?</p>
+                <ul>
+                    <li><a href="#24_59_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
+                    <li><a href="#24_59_assess_noweight"><div class="item"><h4>Not gaining weight</h4></div></a></li>
+                    <li><a href="#24_59_assess_liquid_nose"><div class="item"><h4>Liquid comes out of the nose</h4></div></a></li>
+                    <li><a href="#24_59_assess_coughing"><div class="item"><h4>Coughing or Choking</h4></div></a></li>
+                    <li><a href="#24_59_assess_only_drinks"><div class="item"><h4>Only drinks liquids</h4></div></a></li>
+                    <li><a href="#24_59_assess_not_sitting"><div class="item"><h4>Can't sit up</h4></div></a></li>
+                    <li><a href="#24_59_assess_spill_out"><div class="item"><h4>Food or liquid spill out of mouth</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_assess_oral_structures">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition 
+             :No Cleft : No Concerns-->
+             <section class="question" id="24_59_assess_noconcerns">
+                <p class="notice"></p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><div class="item"><h4>Stop here, follow local nutrition protocols. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section> 
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition 
+             :No Cleft : Not gaining weight-->
+             <section class="question" id="24_59_assess_noweight">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#24_59_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 24 to 59 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/24_59_no_weight_1.png" alt="">
+                    <img src="assets/24_59_no_weight_2.png" alt="">
+                </div>
+            </section> 
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition 
+             :No Cleft :Liquid comes out of the nose-->
+             <section class="question" id="24_59_assess_liquid_nose">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#24_59_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 24 to 59 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/24_59_liquid_nose_1.png" alt="">
+                    <img src="assets/24_59_liquid_nose_2.png" alt="">
+                </div>
+            </section>
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition 
+             :No Cleft : Coughing or Choking-->
+             <section class="question" id="24_59_assess_coughing">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#24_59_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 24 to 59 completed
+                        months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/24_59_coughing_choking_1.png" alt="">
+                    <img src="assets/24_59_coughing_choking_2.png" alt="">
+                    <img src="assets/24_59_coughing_choking_3.png" alt="">
+
+                </div>
+            </section>
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition 
+             :No Cleft : Only drinks liquids-->
+             <section class="question" id="24_59_assess_only_drinks">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#24_59_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 24 to 59 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/24_59_drinks_1.png" alt="">
+                    <img src="assets/24_59_drinks_2.png" alt="">
+                </div>
+            </section> 
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition 
+             :No Cleft : Can't sit up-->
+             <section class="question" id="24_59_assess_not_sitting">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#24_59_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 24 to 59 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/24_59_not_sitting_1.png" alt="">
+                    <img src="assets/24_59_not_sitting_2.png" alt="">
+                </div>
+            </section> 
+            <!-- 24-59 Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition 
+             :Cleft : Food or liquid spill out of mouth-->
+             <section class="question" id="24_59_assess_spill_out">
+                <p class="notice">Check out the images below!</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#24_59_appraise"><div class="item"><h4>APPRAISE Response to Feeding Strategies 24 to 59 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/24_59_not_sitting_1.png" alt="">
+                    <img src="assets/24_59_not_sitting_2.png" alt="">
+                </div>
+            </section>
+            <!-- 24-59 completed months :  APPRAISE Response to Feeding Strategies 24 to 59 completed months. -->
+            <section class="question" id="24_59_appraise">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>APPRAISE Response to Feeding Strategies</p>
+                </div>
+                <p class="notice">During growth and nutrition monitoring or counselling sessions, ask
+                    caregiver about feeding. 
+                    </p>
+                <p class="main-question">Did feeding improve?</p>
+                <ul>
+                    <li><a href="#24_59_appraise_feeding_ok"><div class="item"><h4>YES, feeding is improving.</h4></div></a></li>
+                    <li><a href="#24_59_appraise_SAM"><div class="item"><h4>NO, young child has complicated, severe acute malnutrition</h4></div></a></li>
+                    <li><a href="#24_59_appraise_SAM_still"><div class="item"><h4>No, young child has uncomplicated, severe acute malnutrition or moderate acute malnutrition.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_assess_nocleft">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 completed months :  APPRAISE Response to Feeding Strategies 12 to 23 completed months.:
+             YES, feeding is improving. -->
+             <section class="question" id="24_59_appraise_feeding_ok">
+                <p class="notice">Continue to follow feeding action plan and local/ICMI recommendations for
+                    ongoing health, growth, and nutrition monitoring.</p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#24_59_next_steps"><div class="item"><h4>Go to ASSIGN Next Steps 24 to 59 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 completed months :  APPRAISE Response to Feeding Strategies 12 to 23 completed months.:
+             NO, young child has complicated, severe acute malnutrition -->
+             <section class="question stop" id="24_59_appraise_SAM">
+                <p class="notice">Follow ICMI Guidance or national nutrition protocol to determine if
+                    supplemental feeding is needed, and refer to the nearest hospital. </p>
+                <p class="main-question"></p>
+                <ul>
+                    <!-- <li><div class="item"><h4></h4></div></li> -->
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 completed months :  APPRAISE Response to Feeding Strategies 12 to 23 completed months.:
+             No, young child has uncomplicated, severe acute malnutrition or moderate acute malnutrition. -->
+             <section class="question" id="24_59_appraise_SAM_still">
+                <p class="notice">Follow ICMI Guidance or national nutrition protocol to provide supplemental
+                    nutrition and continue to follow guidance in ACT: Feeding Action Plan to
+                    Address “Not Gaining Weight” 6 to 11 completed months. </p>
+                <p class="main-question"></p>
+                <ul>
+                    <li><a href="#24_59_assess_noweight"><div class="item"><h4>ACT: Feeding Action Plan to
+                        Address “Not Gaining Weight” 24 to 59 completed months</h4></div></a></li>
+                    <li><a href="#24_59_assess_coughing"><div class="item"><h4>ACT: Feeding Action Plan to Address “Coughing or Choking” 12 to 23 completed months.</h4></div></a></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 24-59 completed months :  Go to ASSIGN Next Steps 24 to 59 completed months. -->
+            <section class="question" id="24_59_next_steps">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>ASSIGN Next Steps 12 to 23 Completed Months</p>
+                </div>
+                <p class="notice">Access to existing community programs and assistive technology is a priority for
+                    malnourished children with feeding difficulties, and those with disabilities.</p>
+                <p class="main-question"></p>
+                <!-- <ul>
+                    <li><a href="#0_5_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
+                </ul> -->
+                <div class="nav">
+                    <a href="#24_59_appraise">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/24_59_next_steps.png" alt="">
+                </div>
+            </section>
+            <!-- 24-59 Not able to assess growth using traditional measures -->
+            <section class="question" id="24_59_alternatives_assess">
+                <div class="content-flex header">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>Alternative Assessment 24 to 59 completed months (and older)</p>
+                </div>
+                <p class="notice">Under UNICEF’s Disability Inclusion Guidance, Alternative Assessments can be
+                    used to ASSESS Nutrition Status.</p>
+                <!-- <ul>
+                    <li><a href="#24_59_assess_nocleft"><div class="item"><h4>No Cleft</h4></div></a></li>
+                    <li><a href="#24_59_assess_liquid_nose"><div class="item"><h4>Cleft</h4></div></a></li>
+                </ul> -->
+                <div class="nav">
+                    <a href="#24_59_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+                <div class="resource">
+                    <img src="assets/alternatives_assess.png" alt="">
+                    <img src="assets/alternatives_assess_1.png" alt="">
+                    <img src="assets/alternatives_assess_2.png" alt="">
+                </div>
+            </section>
+            <!-- STOP: wasting -->
+            <!-- 0-5 -->
+            <section class="question" id="0_5_stop_ref_wasting">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>- Do not use this tool. Follow national nutrition protocols and refer to the nearest hospital. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 6-11 -->
+            <section class="question" id="6_11_stop_ref_wasting">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>- Do not use this tool. Follow national nutrition protocols and refer to the nearest hospital. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 -->
+            <section class="question" id="12_23_stop_ref_wasting">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>- Do not use this tool. Follow national nutrition protocols and refer to the nearest hospital. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 24-59 -->
+            <section class="question " id="24_59_stop_ref_wasting">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>- Do not use this tool. Follow national nutrition protocols and refer to the nearest hospital. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- STOP: no wasting -->
+             <!-- 0-5 -->
+            <section class="question" id="0_5_stop_ref_no_wasting">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>Do not use this tool. Follow local nutrition protocols. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#0_5_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 6-11 -->
+            <section class="question" id="6_11_stop_ref_no_wasting">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>Do not use this tool. Follow local nutrition protocols.</h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 12-23 -->
+            <section class="question" id="12_23_stop_ref_no_wasting">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>Do not use this tool. Follow local nutrition protocols.</h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#12_23_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- 24-59 -->
+            <section class="question" id="24_59_stop_ref_no_wasting">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>Do not use this tool. Follow local nutrition protocols.</h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#24_59_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+            <!-- Interruption -->
+            <section class="question interruption" id="interruption">
+                <p class="notice"></p>
+                <p class="main-question stop">STOP</p>
+                <ul>
+                    <li><div class="item"><h4>STOP here. Follow local nutrition protocols. </h4></div></li>
+                </ul>
+                <div class="nav">
+                    <a href="#6_11_status">◀️ Back</a>
+                    <a href="#_start">Restart</a>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <a href="https://www.operationsmile.org/" target="_blank"><img src="assets/logo_operation_smile.png" alt=""></a>
+            <a href="https://www.clapa.com/" target="_blank"><img src="assets/logo_clapa.png" alt=""></a>
+            <a href="https://www.smiletrain.org/" target="_blank"><img src="assets/logo_smiletrain.png" alt=""></a>
+        </div>
+    </div>
+    <script type='text/javascript' src='js/script.js'></script>
+</body>
+</html>

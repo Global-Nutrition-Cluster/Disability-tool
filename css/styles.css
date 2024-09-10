@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-family: "Poppins", sans-serif; */
+    font-family: sans-serif;
+    color: #000;
+    margin: 20px 0;
+
+}
+
+.container {
+    margin: 0 100px;
+    text-align: center;
+    max-width: 60rem;
+}
+
+ .progression {
+/* #9CCB38; #BFDBFE80; */
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: 55px;
+}
+
+ .progression p {
+    /* background-color: #3B82F6; */
+    border-radius: 10px;
+    display: block;
+    color: #FFF;
+}
+
+.main-content {
+    margin: 20px;
+}
+.main-question {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.question-note {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    color: #000;
+}
+
+.notice {
+    /* color :  #89824E; */
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+.content-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+section .header{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+i {
+    align-self: center;
+    margin-right: 10px;
+    color: grey;
+}
+section .header p {
+    align-self: center;
+    margin:0;
+    /* color:  #EE7B08; */
+    /* color: #89824E; */
+}
+
+ul {
+    margin: 0;
+    padding: 8px;
+    list-style-type: none;
+}
+
+ul li{
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 7px rgb(0 0 0 / 8%);
+    user-select: none;
+    cursor: pointer;
+
+    border-color: rgb(212 212 216 / 1);
+    border-radius: 8px;
+    border: 0 solid #e4e4e7;
+    outline: none;
+}
+
+ul li h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: #27272A;
+}
+
+section {
+    display: block;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resource img{
+    width: 550px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img {
+    width: 10rem;
+}
+
+.stop {
+    color: red;
+}
