@@ -61,7 +61,7 @@ body {
 /* #9CCB38; #BFDBFE80; */
     background-color: lightgray;
     border-radius: 10px;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
 }
 
  .progression p {
@@ -91,7 +91,7 @@ body {
 .notice {
     /* color :  #89824E; */
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 10px;
 }
 
 
@@ -118,6 +118,10 @@ section .header p {
     /* color: #89824E; */
 }
 
+a,
+a:hover {
+    text-decoration: none;  /* Remove underline by default */
+}
 ul {
     margin: 0;
     padding: 8px;
@@ -136,6 +140,11 @@ ul li{
     border-radius: 8px;
     border: 0 solid #e4e4e7;
     outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #9CCB38;  /* Change background color on hover */
 }
 
 ul li h4 {
@@ -155,8 +164,37 @@ section {
     justify-content: space-between;
 }
 
-.resource img{
-    width: 550px;
+/* .resource {
+    display: flex;
+}
+.resource .images{
+    flex: 0 0 70%;
+}
+.resource .links {
+    flex:1;
+}
+.resource .images img {
+    width: 100%;
+    object-fit: cover;
+} */
+
+.carousel {
+    margin:15px
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.links  span {
+    font-size: 0.9rem;
+    color: #000;
+}
+.links  span a {
+    color: lightgray;
+}
+.links  span a:hover {
+    color: #000;
 }
 
 .footer {
@@ -166,8 +204,30 @@ section {
 
 .footer img {
     width: 10rem;
+    object-fit: cover;
+    border-radius: 10px;
+    height: auto;
 }
 
 .stop {
     color: red;
+}
+
+.carousel-inner {
+    width: 100%;               /* Ensure carousel takes full width */
+    /* max-height: 300px;           */
+}
+
+.carousel-inner img {
+    object-fit: cover;          /* Ensure the image covers the container without stretching */
+    width: 100%;                /* Make the image take up the full width of the carousel */
+    height: 100%;               /* Ensure it takes the height set by the carousel-inner */
+    border-radius: 10px;        /* Optional: Add rounded corners to images */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);  /* Optional: Add semi-transparent background to the control icons */
+    border-radius: 50%;                    /* Make control icons circular */
+    padding: 20px;                         /* Adjust padding for better visibility */
 }

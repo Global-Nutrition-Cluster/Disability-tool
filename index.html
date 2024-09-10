@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.11/c3.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.11/c3.min.css" /> -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/39e5643f1a.js"></script>
@@ -60,9 +60,9 @@
             <section class="question" id="0_5_assess_oral_structures">
                 <div class="content-flex header">
                     <i class="fas fa-magnifying-glass"></i>
-                    <p>Assess oral structures</p>
+                    <p>ASSESS Oral Structures 0-5 completed months</p>
                 </div>
-                <p class="notice">Check out the image below!</p>
+                <p class="notice">Check out the images below!</p>
                 <ul>
                     <li><a href="#0_5_assess_nocleft"><div class="item"><h4>No Cleft</h4></div></a></li>
                     <li><a href="#0_5_assess_liquid_nose"><div class="item"><h4>Cleft</h4></div></a></li>
@@ -71,8 +71,27 @@
                     <a href="#0_5_status">◀️ Back</a>
                     <a href="#_start">Restart</a>
                 </div>
-                <div class="resource">
-                    <img src="assets/image.png" alt="">
+                <div id="imageSlider_ors" class="carousel slide" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="assets/0_5_asses_1.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_asses_2.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_asses_3.png" class="d-block w-100" ></div>
+                    </div>
+                    <!-- Left and right controls (Manual) -->
+                    <a class="carousel-control-prev" href="#imageSlider_ors" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageSlider_ors" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="links">
+                    <strong >Useful links</strong>
+                    <span><a href="https://iycfimagebank.org/" target="_blank">UNICEF IYCF Image Bank</a></span>
+                    <span><a href="https://www.smiletrain.org/sites/default/files/2021-07/feeding-one-pager-english-1.pdf" target="_blank">Smile train</a></span>
                 </div>
             </section>
             <!-- 0-5 : Potential Risk : No Cleft -->
@@ -117,10 +136,29 @@
                     <a href="#0_5_assess_nocleft">◀️ Back</a>
                     <a href="#_start">Restart</a>
                 </div>
-                <div class="resource">
-                    <img src="assets/no_weight_1.png" alt="">
-                    <img src="assets/no_weight_2.png" alt="">
-                    <img src="assets/no_weight_4.png" alt="">
+                <div id="imageSlider_nocleft" class="carousel slide" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="assets/0_5_no_weight_1.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_no_weight_2.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_no_weight_3.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_no_weight_4.png" class="d-block w-100" ></div>
+                    </div>
+                    <!-- Left and right controls (Manual) -->
+                    <a class="carousel-control-prev" href="#imageSlider_nocleft" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageSlider_nocleft" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="links">
+                    <strong >Useful links</strong>
+                    <span><a href="https://iycfimagebank.org/" target="_blank">UNICEF IYCF Image Bank</a></span>
+                    <span><a href="https://globalhealthmedia.org/videos/carrying-your-baby-skin-to-skin-persian/" target="_blank">Skin to skin</a></span>
+                    <span><a href="https://wicbreastfeeding.fns.usda.gov/babys-hunger-cues" target="_blank">Signs that an infant is ready to eat</a></span>
                 </div>
             </section>
             <!-- 0-5 : Potential Risk : No Cleft : Liquid comes out of the nose-->
@@ -134,10 +172,30 @@
                     <a href="#0_5_assess_nocleft">◀️ Back</a>
                     <a href="#_start">Restart</a>
                 </div>
-                <div class="resource">
-                    <img src="assets/liquid_nose_1.png" alt="">
-                    <img src="assets/liquid_nose_2.png" alt="">
-                    <img src="assets/liquid_nose_3.png" alt="">
+                <div id="imageSlider_liquid_nose" class="carousel slide" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="assets/0_5_liquid_nose_1.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_no_weight_2.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_liquid_nose_3.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_liquid_nose_4.png" class="d-block w-100" ></div>
+                    </div>
+                    <!-- Left and right controls (Manual) -->
+                    <a class="carousel-control-prev" href="#imageSlider_liquid_nose" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageSlider_liquid_nose" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="links">
+                    <strong >Useful links</strong>
+                    <span><a href="https://globalhealthmedia.org/videos/carrying-your-baby-skin-to-skin-persian/" target="_blank">Skin to skin</a></span>
+                    <span><a href="https://iycfimagebank.org/" target="_blank">UNICEF IYCF Image Bank</a></span>
+                    <span><a href="https://www.smiletrain.org/sites/default/files/2021-07/feeding-one-pager-english-1.pdf" target="_blank">Smile train</a></span>
+                    <span><a href="https://wicbreastfeeding.fns.usda.gov/babys-hunger-cues" target="_blank">Signs that an infant is ready to eat</a></span>
                 </div>
             </section>
             <!-- 0-5 : Potential Risk : No Cleft : Coughing or Choking-->
@@ -151,8 +209,26 @@
                     <a href="#0_5_assess_nocleft">◀️ Back</a>
                     <a href="#_start">Restart</a>
                 </div>
-                <div class="resource">
-                    <img src="assets/coughing_choking.png" alt="">
+                <div id="imageSlider_coughing" class="carousel slide" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="assets/0_5_coughing_1.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_coughing_2.png" class="d-block w-100" ></div>
+                    </div>
+                    <!-- Left and right controls (Manual) -->
+                    <a class="carousel-control-prev" href="#imageSlider_coughing" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageSlider_coughing" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="links">
+                    <strong >Useful links</strong>
+                    <span><a href="https://iycfimagebank.org/" target="_blank">UNICEF IYCF Image Bank</a></span>
+                    <span><a href="https://www.feedingmatters.org/wp-content/uploads/2023/12/When-to-Refer-Infant.pdf" target="_blank">Feeding matters</a></span>
                 </div>
             </section>
             <!-- 0-5 : Potential Risk : Appraise response to feeding strategies -->
@@ -233,7 +309,7 @@
                     <a href="#_start">Restart</a>
                 </div>
             </section>
-            <!-- 0-5 : Potential Risk : Appraise response to feeding strategies : YES, feeding improved : Go to ASSIGN Next Steps 0 to 5 Completed Months -->
+            <!-- 0-5 : Next Steps 0 to 5 Completed Months -->
             <section class="question" id="0_5_next_steps">
                 <div class="content-flex header">
                     <i class="fas fa-magnifying-glass"></i>
@@ -242,18 +318,30 @@
                 <p class="notice">Access to existing community programs and assistive technology is a priority for
                     malnourished children with feeding difficulties, and those with disabilities.</p>
                 <p class="main-question"></p>
-                <!-- <ul>
-                    <li><a href="#0_5_assess_noconcerns"><div class="item"><h4>No Concerns</h4></div></a></li>
-                    <li><a href="#0_5_assess_noweight"><div class="item"><h4>Not gaining weight</h4></div></a></li>
-                    <li><a href="#0_5_assess_liquid_nose"><div class="item"><h4>Liquid comes out of the nose</h4></div></a></li>
-                    <li><a href="#0_5_assess_coughing"><div class="item"><h4>Coughing or Choking</h4></div></a></li>
-                </ul> -->
+
                 <div class="nav">
                     <a href="#0_5_appraise">◀️ Back</a>
                     <a href="#_start">Restart</a>
                 </div>
-                <div class="resource">
-                    <img src="assets/0_5_next_steps.png" alt="">
+                <div id="imageSlider_ns" class="carousel slide" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="assets/0_5_next_steps.png" class="d-block w-100" ></div>
+                    </div>
+                    <!-- Left and right controls (Manual) -->
+                    <a class="carousel-control-prev" href="#imageSlider_ns" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageSlider_ns" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="links">
+                    <strong >Useful links</strong>
+                    <span><a href="https://iris.who.int/bitstream/handle/10665/339851/9789240020283-eng.pdf" target="_blank">WHO assistive product specification 26</a></span>
+                    <span><a href="https://supply.unicef.org/" target="_blank">UNICEF supply catalogue</a></span>
                 </div>
             </section>
 
@@ -293,9 +381,27 @@
                     <a href="#6_11_status">◀️ Back</a>
                     <a href="#_start">Restart</a>
                 </div>
-                <div class="resource">
-                    <img src="assets/6_11_asses_1.png" alt="">
-                    <img src="assets/6_11_asses_2.png" alt="">
+                <div id="imageSlider_ors_6_11" class="carousel slide" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="assets/0_5_asses_1.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_asses_2.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_asses_3.png" class="d-block w-100" ></div>
+                    </div>
+                    <!-- Left and right controls (Manual) -->
+                    <a class="carousel-control-prev" href="#imageSlider_ors_6_11" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageSlider_ors_6_11" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="links">
+                    <strong >Useful links</strong>
+                    <span><a href="https://iycfimagebank.org/" target="_blank">UNICEF IYCF Image Bank</a></span>
+                    <span><a href="https://www.smiletrain.org/sites/default/files/2021-07/feeding-one-pager-english-1.pdf" target="_blank">Smile train</a></span>
                 </div>
             </section>
             <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
@@ -346,11 +452,31 @@
                     <a href="#6_11_assess_nocleft">◀️ Back</a>
                     <a href="#_start">Restart</a>
                 </div>
-                <div class="resource">
-                    <img src="assets/6_11_no_weight_1.png" alt="">
-                    <img src="assets/6_11_no_weight_2.png" alt="">
-                    <img src="assets/6_11_no_weight_3.png" alt="">
-                    <img src="assets/6_11_no_weight_4.png" alt="">
+                <div id="imageSlider_nocleft_6_11" class="carousel slide" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="assets/6_11_no_weight_1.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/0_5_no_weight_2.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/6_11_no_weight_3.png" class="d-block w-100" ></div>
+                        <div class="carousel-item"><img src="assets/6_11_no_weight_4.png" class="d-block w-100" ></div>
+                    </div>
+                    <!-- Left and right controls (Manual) -->
+                    <a class="carousel-control-prev" href="#imageSlider_nocleft_6_11" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageSlider_nocleft_6_11" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="links">
+                    <strong >Useful links</strong>
+                    <span><a href="https://iycfimagebank.org/" target="_blank">UNICEF IYCF Image Bank</a></span>
+                    <span><a href="https://globalhealthmedia.org/videos/carrying-your-baby-skin-to-skin-persian/" target="_blank">Skin to skin</a></span>
+                    <span><a href="https://www.unicef.org/media/93981/file/Complementary-Feeding-Guidance-2020.pdf" target="_blank">UNICEF Complementary Feeding Guidance</a></span>
+                    <span><a href="https://www.asha.org/public/developmental-milestones/feeding-and-swallowing-milestones-birth-to-1-year/" target="_blank">Match Food Texture to Skills</a></span>
+                    <span><a href="https://www.ubuntu-hub.org/resources/babyubuntu/" target="_blank">Baby Ubuntu resources</a></span>                    
                 </div>
             </section>      
             <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
@@ -371,6 +497,7 @@
                     <img src="assets/6_11_liquid_nose_2.png" alt="">
                     <img src="assets/6_11_liquid_nose_3.png" alt="">
                 </div>
+            
             </section> 
             <!-- 6-11 completed months :  Uncomplicated, Severe Malnutrition/Wasting or Moderate Acute Malnutrition:
               No Cleft: Coughing or Choking--> 
@@ -1123,6 +1250,7 @@
             </section>
         </div>
         <div class="footer">
+            <a href="https://www.nutritioncluster.net/" target="_blank"><img src="assets/GNC_logo.png" alt=""></a>
             <a href="https://www.operationsmile.org/" target="_blank"><img src="assets/logo_operation_smile.png" alt=""></a>
             <a href="https://www.clapa.com/" target="_blank"><img src="assets/logo_clapa.png" alt=""></a>
             <a href="https://www.smiletrain.org/" target="_blank"><img src="assets/logo_smiletrain.png" alt=""></a>
