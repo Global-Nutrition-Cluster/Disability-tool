@@ -162,8 +162,26 @@ section {
 .nav {
     display: flex;
     justify-content: space-between;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;;
 }
 
+.nav a {
+    display: inline-block;      /* Makes the link behave like a block-level element */
+    padding: 10px 20px;         /* Adds padding to create space inside the button */
+    background-color: #9CCB38;  /* Button background color */
+    color: white;               /* Button text color */
+    text-decoration: none;      /* Removes the underline */
+    border-radius: 5px;         /* Adds rounded corners */
+    font-size: 14px;            /* Increases font size */
+    font-weight: 300;          /* Makes the text bold */
+    text-align: center;         /* Centers the text inside the button */
+    cursor: pointer;            /* Shows a pointer cursor on hover */
+}
+
+.nav a {
+    background-color: #9CCB38;  /* Changes background color on hover */
+}
 /* .resource {
     display: flex;
 }
@@ -203,7 +221,7 @@ section {
 }
 
 .footer img {
-    width: 10rem;
+    width: 8rem;
     object-fit: cover;
     border-radius: 10px;
     height: auto;
