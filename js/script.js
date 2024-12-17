@@ -42,9 +42,11 @@ function showSection(hash) {
     var nodes = document.getElementsByTagName("section");
     for (var i = 0; i < nodes.length; i++) {
         var node = nodes.item(i);
+
         if (node.id == hash) {
             node.style.display = "block";
-            // console.log("tous les nodes : ", node," et leurs index", i);
+            console.log(node.id);
+            // console.log(hash)
         } else {
             node.style.display = "none";
         }
